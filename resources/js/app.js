@@ -10,6 +10,7 @@ import { Provider } from "react-redux";
 import { createStore } from "redux";
 
 import Header from "./component/header";
+import Banner from "./component/home/banner"
 
 //call reducer
 import reducers from "./reducers/index";
@@ -25,6 +26,11 @@ class App extends React.Component {
                 <Router>
                     <div className="App">
                         <Header/>
+                        <Switch>
+                            <Route exact path="/">
+                                <Banner/>
+                            </Route>
+                        </Switch>
                     </div>
                 </Router>
             </Provider>

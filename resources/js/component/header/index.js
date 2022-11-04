@@ -63,6 +63,9 @@ class Header extends React.Component {
                             <Nav.Link eventKey={'/cart'} as={Link} to="/cart">
                                 Cart
                             </Nav.Link>
+                            <Nav.Link eventKey={'/login'} as={Link} to="/login">
+                                Login
+                            </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
