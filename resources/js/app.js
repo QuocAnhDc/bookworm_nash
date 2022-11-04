@@ -11,6 +11,7 @@ import { createStore } from "redux";
 
 import Header from "./component/header";
 import Banner from "./component/home/banner"
+import Wrapper from "./component/home/wrapper";
 
 //call reducer
 import reducers from "./reducers/index";
@@ -29,6 +30,7 @@ class App extends React.Component {
                         <Switch>
                             <Route exact path="/">
                                 <Banner/>
+                                <Wrapper/>
                             </Route>
                         </Switch>
                     </div>
