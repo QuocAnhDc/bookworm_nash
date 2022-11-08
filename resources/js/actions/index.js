@@ -34,3 +34,25 @@ export const actResetDataFilterPage = () => {
         type: RESET_DATA_FILTER_PAGE
     }
 }
+
+// Product Page
+export const actAddNewDataSidebar = (content) => {
+    return {
+        type: ADD_NEW_DATA_SIDEBAR,
+        content,
+    }
+}
+
+export const actAddNewFilterQueryParam = (content) => {
+    return {
+        type: ADD_NEW_FILTER_QUERY_PARAM,
+        content,
+    }
+}
+
+export const actAddNewSortQueryParam = (content) => {
+    return {
+        type: ADD_NEW_SORT_QUERY_PARAM,
+        content,
+    }
+}

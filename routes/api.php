@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-Route::post('session', [LoginController::class, 'login'])->name('api.login');
+Route::post('session', [LoginController::class, 'store'])->name('api.login');
 
 Route::middleware(['auth:sanctum'])->group(function () {
     Route::delete('session', [LoginController::class, 'logout'])->name('api.logout');
@@ -35,6 +35,3 @@ Route::resource('filters', FilterApi::class)->only([
     'index'
 ]);
 
-Route::resource('orders', OrderApi::class)->only([
-    'store'
-]);
